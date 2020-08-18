@@ -1,0 +1,239 @@
+body {
+  margin: 0px;
+  font-family: ' Muli', sans-serif;
+}
+
+header {
+  background-color: #21C08B;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header img {
+  width: 200px;
+  margin-left: 30px;
+}
+
+.login {
+  background: -webkit-gradient(linear, left top, left bottom, from(#21C08B), to(#AB88FF));
+  background: linear-gradient(#21C08B, #AB88FF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 30px;
+}
+
+.login_container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  min-height: 600px;
+  width: 300px;
+  padding: 60px 68px 40px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.login_container h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.login_container_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login_container_form input {
+  background-color: transparent;
+  height: 50px;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.buttom {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 10px 0px 50px;
+}
+
+.login_container_form a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.login_container_form a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #AB88FF;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login_container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 30px;
+    height: 80px;
+  }
+}
+
+/* -----error---- */
+.error {
+  background: -webkit-gradient(linear, left top, left bottom, from(#21C08B), to(#AB88FF));
+  background: linear-gradient(#21C08B, #AB88FF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+.error-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.error-container h1 {
+  font-size: 60px;
+  font-family: 'Muli', sans-serif;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+/*# sourceMappingURL=estilos-registro.css.map */
